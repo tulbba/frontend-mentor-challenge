@@ -1,0 +1,368 @@
+body {
+  background-color: #f2f2f2;
+}
+
+html {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.container {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+div {
+  width: 330px;
+  height: 430px;
+  margin: auto;
+}
+
+.sedans {
+  background: #e38826;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 50px;
+  border-radius: 9px 9px 0 0;
+}
+.sedans h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sedans button {
+  background-color: #f2f2f2;
+  border-radius: 60px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #e38826;
+  position: relative;
+  top: 10px;
+  right: 5px;
+}
+.sedans button:hover {
+  cursor: pointer;
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: solid 2px white;
+}
+.sedans p {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+.sedans img {
+  position: relative;
+  bottom: 15px;
+}
+
+.suvs {
+  background: #006970;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 50px;
+  padding: 50px;
+}
+.suvs h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.suvs button {
+  background-color: #f2f2f2;
+  border-radius: 60px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #006970;
+  position: relative;
+  top: 10px;
+  right: 5px;
+}
+.suvs button:hover {
+  cursor: pointer;
+  background-color: #006970;
+  color: #f2f2f2;
+  border: solid 2px white;
+}
+.suvs p {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+.suvs img {
+  position: relative;
+  bottom: 15px;
+}
+.suvs h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.suvs button:hover {
+  background-color: #006970;
+}
+
+.luxury {
+  background: #004241;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 50px;
+  border-radius: 0 0 9px 9px;
+}
+.luxury h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.luxury button {
+  background-color: #f2f2f2;
+  border-radius: 60px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #004241;
+  position: relative;
+  top: 10px;
+  right: 5px;
+}
+.luxury button:hover {
+  cursor: pointer;
+  background-color: #004241;
+  color: #f2f2f2;
+  border: solid 2px white;
+}
+.luxury p {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+.luxury img {
+  position: relative;
+  bottom: 15px;
+}
+.luxury h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.luxury button:hover {
+  background-color: #004241;
+}
+
+div.space {
+  height: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 41%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+
+  div {
+    width: 300px;
+    height: 490px;
+  }
+
+  div.space {
+    display: none;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 41%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+
+  div {
+    width: 300px;
+    height: 490px;
+  }
+
+  div.space {
+    display: none;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 41%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+  }
+
+  div {
+    width: 300px;
+    height: 490px;
+  }
+
+  div.space {
+    display: none;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 41%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+
+  div.space {
+    display: none;
+  }
+}
+@media screen and (min-width: 1669px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  div {
+    width: 320px;
+    height: 490px;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+
+  div.space {
+    display: none;
+  }
+}
+@media screen and (width: 1920px) {
+  .container > div {
+    float: left;
+  }
+
+  .container {
+    position: absolute;
+    top: 41%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+
+  div {
+    width: 320px;
+    height: 490px;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury button, .sedans button, .suvs button {
+    top: 60px;
+  }
+
+  div.space {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

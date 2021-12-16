@@ -1,0 +1,301 @@
+$background: hsl(0, 0%, 95%);
+$heading: hsl(0, 0%, 95%);
+$button: hsl(0, 0%, 95%);
+$font-title: 'Big Shoulders Display', cursive;
+$font-p: 'Lexend Deca', sans-serif;  
+$p-color: hsla(0, 0%, 100%, 0.75);
+
+
+@mixin card($theme: hsl(31, 77%, 52%)) {
+    background: $theme;
+    font-family: $font-p;
+    font-size: 15px;
+    padding: 50px;
+
+    h1 {
+        color: $heading;
+        font-family: $font-title;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    button {
+        background-color: $button;
+        border-radius: 60px;
+        width: 150px;
+        height: 50px;
+        border: none;
+        color: $theme;
+        position: relative;
+        top: 10px;
+        right: 5px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $theme;
+        color: $heading;
+        border: solid 2px white;
+    }
+
+    p {
+        color: $p-color;
+        letter-spacing: 0.5px;
+        padding-bottom: 10px;
+    }
+    img {
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+body {
+    background-color: $background;
+}
+
+html {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.container  {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+div {
+    width: 330px;
+    height: 430px;
+    margin: auto;
+}
+
+.sedans {
+    @include card;
+    border-radius: 9px 9px 0 0;
+}
+
+.suvs {
+   @include card($theme:hsl(184, 100%, 22%));
+   padding: 50px;
+
+   h1 {
+    color: $heading;
+    font-family: $font-title;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+}
+
+.luxury {
+    @include card($theme: hsl(179, 100%, 13%));
+    border-radius: 0 0 9px 9px; 
+
+    h1 {
+        color: $heading;
+        font-family: $font-title;
+        font-size: 40px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    button:hover {
+        background-color: hsl(179, 100%, 13%);
+    }
+}
+
+div.space {
+    height: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container > div {
+        float: left;
+     }
+     .container {
+        position: absolute;
+        top: 41%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+     }
+    div {
+        width: 300px;
+        height: 490px;
+    }
+    div.space {
+        display: none;
+    }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container > div {
+        float: left;
+     }
+     .container {
+        position: absolute;
+        top: 41%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+     }
+    div {
+        width: 300px;
+        height: 490px;
+    }
+    div.space {
+        display: none;
+    }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container > div {
+        float: left;
+     }
+     .container {
+        position: absolute;
+        top: 41%;
+        left: 64%;
+        transform: translate(-50%, -50%);
+     }
+    div {
+        width: 300px;
+        height: 490px;
+    }
+    div.space {
+        display: none;
+    }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container > div {
+       float: left;
+    }
+    .container {
+        position: absolute;
+        top: 41%;
+        left: 64%;
+        transform: translate(-50%, -50%);
+     }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+    div.space {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1669px) {
+    .container > div {
+       float: left;
+    }
+    .container {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+     }
+    div {
+        width: 320px;
+        height: 490px;
+    }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+    div.space {
+        display: none;
+    }
+}
+
+@media screen and (width: 1920px) {
+    .container > div {
+       float: left;
+    }
+    .container {
+        position: absolute;
+        top: 41%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+     }
+    div {
+        width: 320px;
+        height: 490px;
+    }
+    .sedans {
+        border-radius: 9px 0 0 9px;
+    }
+    .luxury {
+        border-radius: 0 9px 9px 0;
+    }
+    .luxury, .sedans, .suvs {
+        button {
+            top: 60px;
+        }
+    }
+    div.space {
+        display: none;
+    }
+}
+
+
+
+
+
+
