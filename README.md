@@ -18,13 +18,17 @@ I made a lot of changes to the code, because I wasn't happy how the outcome look
 - [Desktop](./images/desktop.png)
 - [Mobile](./images/mobile.png)
 
+### Link
+
+- [Live Site](https://frontend-mentor-challenge-two.vercel.app/)
+
 ### Built with
 
 - HTML5
 - SCSS
 - CSS Flexbox
 
-### Links
+### Author
 
 - Frontend Mentor - [@tulbba](https://www.frontendmentor.io/profile/tulbba)
 - Github - [tulbba](https://github.com/tulbba)
